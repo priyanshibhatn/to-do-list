@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header>Todo Manager</header> <br>
+            <div class="NewTask">
+                <input id="txtNewTask" class="col s10 l11" type="text" placeholder="Add a new Task">
+                <button id="btnAddTask" class="btn col s2 l1" disabled><i class="material-icons">add</i></button>
+            </div>
+
+            <ul id="Onging-Task" class="todoList col s12">
+            </ul>
+            <footer class="footer">
+                <span>You Have <span id="pendingTask"></span> Tasks to do</span>
+                <button id="btnDoneAll" class="btn">Done All <span><i class="material-icons right">done_all</i></span></button>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
